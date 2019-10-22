@@ -89,3 +89,23 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
 }
+
+document.querySelector('button').addEventListener('click', function () {
+    gamePlaying = false;
+    document.querySelector('.btn-roll').style.display = 'none';
+    document.querySelector('.btn-hold').style.display = 'none';
+    document.querySelector('.btn-new').style.display = 'none';
+    document.querySelector('img').style.display = 'none';
+
+
+    document.querySelector('.popup-wrapper').style.display = 'block';
+});
+
+document.querySelector('.popup-close').addEventListener('click', () => {
+    document.querySelector('.popup-wrapper').style.display = 'none';
+    gamePlaying = true;
+    document.querySelector('.btn-roll').style.display = 'block';
+    document.querySelector('.btn-hold').style.display = 'block';
+    document.querySelector('.btn-new').style.display = 'block';
+    document.querySelector('img').style.display = 'block';
+  });

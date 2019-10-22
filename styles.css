@@ -133,6 +133,10 @@ i {
     transition: margin 0.3s;
 }
 
+.btn-rule {
+    left: 95px;
+    top: 20px;
+}
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
@@ -148,3 +152,44 @@ i {
 
 .winner { background-color: #b6b2b2; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.btn-rule {
+    display: block;
+    margin: 20px auto;
+    border: 0;
+    padding: 6px 10px;
+}
+
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9;
+}
+
+.popup {
+    font-family: arial;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: red;
+}
+
+.popup-close:hover {
+    cursor: pointer;
+    color: black;
+}
